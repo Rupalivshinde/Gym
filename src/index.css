@@ -1,0 +1,33 @@
+@font-face {
+  font-family: regular;
+  src: url(/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7W0Q5nw.ttf);
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+
+}
+
+html,
+body {
+  overflow-x: hidden;
+  font-family: regular;
+
+}
+
+.hero {
+  height: 100vh;
+  width: 100%;
+}
+
+:root {
+  --lightgray: #D9D9D9;
+  --gray: #9c9c9c;
+  --orange: #f48915;
+  --darkGrey: #464D53;
+  --caloryCard: #656565;
+  --planCard: linear-gradient(210.41deg, #fa5042 1.14%, #ffa739 100.75%);
+  --appColor: #3c3f45;
+}

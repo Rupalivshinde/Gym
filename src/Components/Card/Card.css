@@ -1,0 +1,199 @@
+.card_container {
+    max-height: 1500px;
+    background-color: #4D4E53;
+    padding-top: 7rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card_heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.card_heading h2 {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 34px;
+    font-style: italic;
+    text-transform: uppercase;
+}
+
+.card_container span {
+    text-transform: uppercase;
+    font-style: italic;
+    font-size: 34px;
+    font-family: Arial, Helvetica, sans-serif;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-fill-color: transparent;
+}
+
+.box_container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 29px;
+    /* You can reduce this gap for smaller screens */
+    color: white;
+    margin: 1.8rem 2rem;
+    justify-content: center;
+}
+
+.box {
+    height: 250px;
+    width: 22%;
+    background-color: #808080;
+    padding: 1rem 1.5rem;
+    position: relative;
+    cursor: pointer;
+    transition: all 3s ease;
+}
+
+.box:hover {
+    background: var(--planCard)
+}
+
+.box h2 {
+    padding-top: 1rem;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.box p {
+    line-height: 24px;
+    padding-top: 0.9rem;
+    font-weight: 100;
+}
+
+.box h3 {
+    font-size: 1rem;
+    padding-top: 1rem;
+    font-weight: 100;
+}
+
+.box img {
+    position: absolute;
+    top: 11.9rem;
+    left: 6.5rem;
+    height: 1.2rem;
+    width: 1.8rem;
+    object-fit: cover;
+}
+
+.icon {
+    fill: white;
+    width: 30px;
+    height: 30px;
+    transition: fill 0.3s ease;
+}
+
+.icon:hover {
+    fill: #ff0000;
+}
+
+/* Media Queries for Responsiveness */
+
+/* For tablets */
+@media (max-width: 768px) {
+    .card_container {
+        padding-top: 17rem;
+    }
+
+    .box_container {
+        flex-direction: column;
+        gap: 12px;
+        /* Reduced gap */
+        margin: 1rem;
+        /* Adjusted margin */
+    }
+
+    .box {
+        width: 80%;
+        margin-bottom: 1rem;
+    }
+
+    .card_heading h2,
+    .card_container span {
+        font-size: 24px;
+    }
+}
+
+/* For mobile screens */
+@media (max-width: 480px) {
+    .card_container {
+        padding-top: 5rem;
+    }
+
+    .box_container {
+        gap: 10px;
+        /* Further reduced gap */
+        margin: 0.8rem;
+        /* Adjusted margin for better fitting */
+    }
+
+    .box {
+        width: 100%;
+        margin-bottom: 1.5rem;
+    }
+
+    .card_heading h2,
+    .card_container span {
+        font-size: 17px;
+    }
+
+    .box h2 {
+        font-size: 16px;
+    }
+
+    .box p {
+        font-size: 14px;
+    }
+
+    .box img {
+        top: 10rem;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+@media (max-width: 375px) {
+    .card_container {
+        padding-top: 20rem;
+    }
+
+    .box_container {
+        gap: 10px;
+        /* Further reduced gap */
+        margin: 0.8rem;
+        /* Adjusted margin for better fitting */
+    }
+
+    .box {
+        width: 100%;
+        margin-bottom: 1.5rem;
+    }
+
+    .card_heading h2,
+    .card_container span {
+        font-size: 17px;
+    }
+
+    .box h2 {
+        font-size: 16px;
+    }
+
+    .box p {
+        font-size: 14px;
+    }
+
+    .box img {
+        top: 10rem;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}

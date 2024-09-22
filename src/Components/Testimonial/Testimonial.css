@@ -1,0 +1,547 @@
+/* Base styles for larger screens */
+.testimonial {
+    height: auto;
+    width: 100%;
+    background-color: #4E4F53;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 0rem;
+    color: white;
+    position: relative;
+    flex-wrap: wrap;
+}
+
+.testimonial img {
+    height: 300px;
+    width: 300px;
+    object-fit: cover;
+    position: absolute;
+    top: 16%;
+    left: 105%;
+    z-index: 999;
+}
+
+.testimonial_container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 1.9rem;
+    z-index: 2;
+    max-width: 60%;
+    margin-right: 26rem;
+}
+
+.testimonial_container h5 {
+    color: var(--orange);
+    font-size: 1.1rem;
+}
+
+.testimonial h2 span {
+    text-transform: uppercase;
+    font-size: 51px;
+    font-family: Arial, Helvetica, sans-serif;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-fill-color: transparent;
+}
+
+.testimonial h3 {
+    text-transform: uppercase;
+    font-size: 3.1rem;
+}
+
+.levelup {
+    font-size: 51px;
+    text-transform: uppercase;
+    padding-top: 2rem;
+}
+
+.testimonial p {
+    font-size: 1rem;
+    letter-spacing: 2px;
+    width: 100%;
+    line-height: 42px;
+}
+
+.testimonial h6 span {
+    color: var(--orange);
+    font-size: 1rem;
+    font-weight: 100;
+}
+
+.testimonial h6 {
+    font-size: 1rem;
+    font-weight: 100;
+}
+
+.img_overlay {
+    position: absolute;
+    left: 69%;
+    margin-top: 5rem;
+    height: 45vh;
+    width: 310px;
+    background: linear-gradient(210.41deg, #fa5042 1.14%, #ffa739 100.75%);
+    z-index: 1;
+}
+
+.box_overlay {
+    position: absolute;
+    left: 65%;
+    top: 16%;
+    height: 45vh;
+    width: 300px;
+    background: transparent;
+    border: 2px solid #FFA13A;
+    z-index: 1;
+}
+
+.input_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    background-color: #808080;
+    padding: 1rem;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 500px;
+    height: 10vh;
+    color: white;
+    position: relative;
+    margin-left: 0;
+}
+
+.input_container input {
+    flex: 1;
+    height: 100%;
+    background-color: transparent;
+    color: white;
+    border: none;
+    padding: 0.5rem;
+    font-size: 1rem;
+}
+
+.input_container input::placeholder {
+    color: #ccc;
+    opacity: 1;
+    font-size: 1rem;
+}
+
+.input_container button {
+    padding: 0.8rem 1.5rem;
+    background-color: #F48915;
+    border: none;
+    color: white;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.footer {
+    min-height: 50vh;
+    /* Use min-height to avoid issues with content overflow */
+    width: 100%;
+    padding: 4rem 2rem;
+    background-color: #4E4F53;
+    position: relative;
+    /* Required for absolute positioning inside */
+}
+
+.links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+    margin: 3rem auto;
+    flex-wrap: wrap;
+    /* Wrap the icons for smaller screens */
+}
+
+.links img {
+    height: 30px;
+    width: 30px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 2rem;
+    z-index: 999;
+}
+
+.logo img {
+    height: 3rem;
+}
+
+.fade {
+    position: absolute;
+    /* Absolute positioning to center it */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* Center it */
+    margin: 0 auto;
+    height: 50vh;
+    width: 30%;
+    background: linear-gradient(210.41deg, #fa5042 1.14%, #ffa739 100.75%);
+    border-radius: 50%;
+    filter: blur(150px);
+
+    z-index: 0;
+
+}
+
+/* Responsive styles for tablets and small screens (up to 768px) */
+@media (max-width: 768px) {
+    .testimonial {
+        flex-direction: column;
+        align-items: center;
+        padding: 1.5rem 1rem;
+        position: absolute;
+        top: 520%;
+    }
+
+    .testimonial img {
+        margin-bottom: 10rem;
+        height: 50vh;
+        /* Reduced height for better spacing */
+    }
+
+    .testimonial_container {
+        max-width: 90%;
+        margin-right: 0;
+        /* Removed unnecessary margin */
+    }
+
+    .testimonial_container h2 span {
+        font-size: 24px;
+        /* Adjusted for readability on smaller screens */
+    }
+
+    .testimonial h3 {
+        font-size: 2.5rem;
+    }
+
+    .testimonial p {
+        font-size: 1rem;
+        line-height: 1.5;
+        letter-spacing: 1.5px;
+    }
+
+    .img_overlay,
+    .box_overlay {
+        display: none;
+        /* Hide overlays for smaller screens */
+    }
+
+    hr {
+        display: block;
+    }
+
+    .footer {
+        padding-top: 36rem;
+    }
+
+
+}
+
+/* Responsive styles for mobile devices (up to 480px) */
+@media (max-width: 480px) {
+    .testimonial {
+        flex-direction: column;
+        align-items: center;
+        padding: 1.5rem 1rem;
+        position: absolute;
+        top: 530%;
+        /* Fixes absolute positioning */
+        margin-bottom: 2rem;
+    }
+
+    .testimonial img {
+        height: 280px;
+        width: 280px;
+        position: relative;
+        top: auto;
+        left: auto;
+        margin-bottom: 2rem;
+        /* Reduced gap */
+    }
+
+    .testimonial_container {
+        padding: 0 1rem;
+        max-width: 100%;
+        margin-right: 0;
+    }
+
+    .testimonial_container h2 span {
+        font-size: 35px;
+    }
+
+    .levelup {
+        font-size: 35px;
+    }
+
+    .testimonial h3 {
+        font-size: 1.8rem;
+    }
+
+    .testimonial p {
+        font-size: 0.85rem;
+        line-height: 1.4;
+    }
+
+    .input_container {
+        flex-direction: column;
+        padding: 0.5rem;
+        gap: 0.5rem;
+    }
+
+    .input_container input,
+    .input_container button {
+        width: 100%;
+        padding: 0.7rem;
+    }
+
+    .input_container button {
+        font-size: 0.9rem;
+        padding: 0.6rem 1rem;
+    }
+
+    .footer {
+        padding-top: 36rem;
+    }
+
+
+
+}
+
+@media (max-width: 390px) {
+    .testimonial {
+        flex-direction: column;
+        align-items: center;
+        padding: 1.5rem 1rem;
+        position: absolute;
+        top: 555%;
+        /* Fixes absolute positioning */
+        margin-bottom: 2rem;
+    }
+
+    .testimonial img {
+        height: 280px;
+        width: 280px;
+        position: relative;
+        top: auto;
+        left: auto;
+        margin-bottom: 2rem;
+        /* Reduced gap */
+    }
+
+    .testimonial_container {
+        padding: 0 1rem;
+        max-width: 100%;
+        margin-right: 0;
+    }
+
+    .testimonial_container h2 span {
+        font-size: 35px;
+    }
+
+    .levelup {
+        font-size: 35px;
+    }
+
+    .testimonial h3 {
+        font-size: 1.8rem;
+    }
+
+    .testimonial p {
+        font-size: 0.85rem;
+        line-height: 1.4;
+    }
+
+    .input_container {
+        flex-direction: column;
+        padding: 0.5rem;
+        gap: 0.5rem;
+    }
+
+    .input_container input,
+    .input_container button {
+        width: 100%;
+        padding: 0.7rem;
+    }
+
+    .input_container button {
+        font-size: 0.9rem;
+        padding: 0.6rem 1rem;
+    }
+
+    .footer {
+        padding-top: 46rem;
+    }
+
+
+
+}
+
+
+
+@media (max-width: 375px) {
+    .testimonial {
+        flex-direction: column;
+        align-items: center;
+        padding: 1.5rem 1rem;
+        position: absolute;
+        top: 724%;
+        /* Fixes absolute positioning */
+        margin-bottom: 2rem;
+    }
+
+    .testimonial img {
+        height: 280px;
+        width: 280px;
+        position: relative;
+        top: auto;
+        left: auto;
+        margin-bottom: 2rem;
+        /* Reduced gap */
+    }
+
+    .testimonial_container {
+        padding: 0 1rem;
+        max-width: 100%;
+        margin-right: 0;
+    }
+
+    .testimonial_container h2 span {
+        font-size: 35px;
+    }
+
+    .levelup {
+        font-size: 35px;
+    }
+
+    .testimonial h3 {
+        font-size: 1.8rem;
+    }
+
+    .testimonial p {
+        font-size: 0.85rem;
+        line-height: 1.4;
+    }
+
+    .input_container {
+        flex-direction: column;
+        padding: 0.5rem;
+        gap: 0.5rem;
+    }
+
+    .input_container input,
+    .input_container button {
+        width: 100%;
+        padding: 0.7rem;
+    }
+
+    .input_container button {
+        font-size: 0.9rem;
+        padding: 0.6rem 1rem;
+    }
+
+    .footer {
+        padding-top: 66rem;
+    }
+
+    .fade {
+        position: absolute;
+        /* Absolute positioning to center it */
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        /* Center it */
+        margin: 30rem auto;
+        height: 50vh;
+        width: 30%;
+        background: linear-gradient(210.41deg, #fa5042 1.14%, #ffa739 100.75%);
+        border-radius: 50%;
+        filter: blur(100px);
+
+        z-index: 0;
+
+    }
+
+
+
+
+
+
+
+
+
+
+}
+
+@media (max-width: 360px) {
+    .testimonial {
+        flex-direction: column;
+        align-items: center;
+        padding: 1.5rem 1rem;
+        position: absolute;
+        top: 690%;
+    }
+
+    .testimonial img {
+        height: 280px;
+        width: 280px;
+        position: relative;
+        top: auto;
+        left: auto;
+        margin-bottom: 2rem;
+    }
+
+    .testimonial_container {
+        padding: 0 1rem;
+        max-width: 100%;
+        margin-right: 0;
+    }
+
+    .testimonial_container h2 span {
+        font-size: 35px;
+    }
+
+    .levelup {
+        font-size: 35px;
+    }
+
+    .testimonial h3 {
+        font-size: 1.8rem;
+    }
+
+    .testimonial p {
+        font-size: 0.85rem;
+        line-height: 1.4;
+    }
+
+    .input_container {
+        flex-direction: column;
+        padding: 0.5rem;
+        gap: 0.5rem;
+    }
+
+    .input_container input,
+    .input_container button {
+        width: 100%;
+        padding: 0.7rem;
+    }
+
+    .input_container button {
+        font-size: 0.9rem;
+        padding: 0.6rem 1rem;
+    }
+
+    .footer {
+        padding-top: 36rem;
+    }
+
+
+
+}
