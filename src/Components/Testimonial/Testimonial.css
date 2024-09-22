@@ -150,7 +150,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 4rem;
+    gap: 2rem;
     margin: 3rem auto;
     flex-wrap: wrap;
     /* Wrap the icons for smaller screens */
@@ -198,7 +198,7 @@
         align-items: center;
         padding: 1.5rem 1rem;
         position: absolute;
-        top: 520%;
+        top: 400%;
     }
 
     .testimonial img {
@@ -245,6 +245,13 @@
 
 }
 
+@media (max-width:540px) {
+    .footer {
+        padding-top: 3rem;
+    }
+
+}
+
 /* Responsive styles for mobile devices (up to 480px) */
 @media (max-width: 480px) {
     .testimonial {
@@ -252,7 +259,7 @@
         align-items: center;
         padding: 1.5rem 1rem;
         position: absolute;
-        top: 530%;
+        top: 523%;
         /* Fixes absolute positioning */
         margin-bottom: 2rem;
     }
@@ -392,7 +399,7 @@
         align-items: center;
         padding: 1.5rem 1rem;
         position: absolute;
-        top: 724%;
+        top: 704%;
         /* Fixes absolute positioning */
         margin-bottom: 2rem;
     }
@@ -447,9 +454,6 @@
         padding: 0.6rem 1rem;
     }
 
-    .footer {
-        padding-top: 76rem;
-    }
 
     .fade {
         position: absolute;
@@ -486,7 +490,7 @@
         align-items: center;
         padding: 1.5rem 1rem;
         position: absolute;
-        top: 690%;
+        top: 670%;
     }
 
     .testimonial img {
@@ -538,9 +542,6 @@
         padding: 0.6rem 1rem;
     }
 
-    .footer {
-        padding-top: 70rem;
-    }
 
 
 
